@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "jpl-rosa"
-version = "1.0.7"
+version = "1.0.8"
 description = "ROSA: the Robot Operating System Agent"
 readme = "README.md"
 authors = [{ name = "Rob Royce", email = "Rob.Royce@jpl.nasa.gov" }]
@@ -25,11 +25,11 @@ requires-python = ">=3.9, <4"
 dependencies = [
     "PyYAML==6.0.1",
     "python-dotenv>=1.0.1",
-    "langchain==0.3.2",
-    "langchain-community==0.3.1",
-    "langchain-core==0.3.9",
-    "langchain-openai==0.2.2",
-    "langchain-ollama==0.2.0",
+    "langchain~=0.3.23",
+    "langchain-community~=0.3.21",
+    "langchain-core~=0.3.52",
+    "langchain-openai~=0.3.14",
+    "langchain-ollama~=0.3.2",
     "pydantic",
     "pyinputplus",
     "azure-identity",
