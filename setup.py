@@ -12,7 +12,9 @@
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
 
-from distutils.core import setup
+from setuptools import setup
 
-if __name__ == "__main__":
-    setup()
+setup(
+    name="jpl-rosa",
+    version="1.0.7",
+)
