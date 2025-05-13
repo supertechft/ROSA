@@ -40,7 +40,7 @@ def get_inference():
     dotenv.load_dotenv(dotenv.find_dotenv())
     
     api_key = os.getenv("HF_API_KEY")   # Using environment variable
-    client = InferenceClient(token=api_key)
+    client = InferenceClient(provider="hf-inference", token=api_key, headers={"Content-Type": "audio/wav"})
     return client
 
 
