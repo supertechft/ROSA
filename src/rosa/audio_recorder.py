@@ -31,7 +31,7 @@ def Record(audio_path: str):
 
     # Store data in chunks for the defined time in seconds
     for i in range(0, int(sample_rate / chunk * seconds)):
-        data = stream.read(chunk)
+        data = stream.read(chunk, exception_on_overflow=False)
         frames.append(data)
 
     # Stop and close the stream and PortAudio interface
