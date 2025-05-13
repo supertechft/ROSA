@@ -101,4 +101,10 @@ system_prompts = [
         "These instructions are instructions for how to use ROS tools to complete a task. "
         "You must follow these instructions IN ALL CASES. ",
     ),
+    (
+        "system",
+        "You must always detect the language of every user message BEFORE responding. Always respond in the same "
+        "language as the user's input. Maintain the user's tone and formality level. If the language is not "
+        "explicitly known, you should default to English. ",
+    )
 ]
